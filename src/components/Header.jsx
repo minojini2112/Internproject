@@ -2,11 +2,11 @@ const Header = () => {
   
   return (
     <>
-    <div className="mx-auto 2xl:container">
+    <div className="mx-auto 2xl:container" id="main-head">
       <div className="w-[90%] mx-auto flex justify-around pt-4 items-center">
         <div>
           <img></img>
-          <h2 className="text-3xl font-bold ">BigLinkz</h2>
+          <h2 className="text-3xl font-bold">BigLinkz</h2>
         </div>
         <div className="hidden md:flex">
           <ul className="flex text-center gap-x-10">
@@ -39,8 +39,10 @@ const Header = () => {
         </div>
         <div className="md:hidden" id="menu-btn">
           <button onClick={()=>{
-            document.getElementById("headermd").classList.toggle("hidden")
-            document.getElementById("menu-btn").classList.add("hidden")
+            document.getElementById("headermd").classList.toggle("hidden");
+            document.getElementById("menu-btn").classList.add("hidden");
+            document.getElementById("main-head").classList.add("hidden");
+            
           }}>
             <span className="material-symbols-outlined">menu_open</span>
           </button>
@@ -49,15 +51,21 @@ const Header = () => {
       </div>
       <div className="hidden mx-auto 2xl:container" id="headermd">
       <div className="mx-auto w-[90%] grid grid-cols-1 ">
-        <div className="flex justify-end ">
+        <div className="flex justify-between my-2">
+          <div>
+          <h2 className="text-3xl font-bold">BigLinkz</h2>
+          </div>
+          <div>
           <button>
             <span className="material-symbols-outlined" onClick={
               ()=>{
                 document.getElementById("headermd").classList.toggle("hidden");
                 document.getElementById("menu-btn").classList.remove("hidden");
+                document.getElementById("main-head").classList.remove("hidden");
               }
             }>close</span>
           </button>
+          </div>
         </div>
         <div className="mt-5 space-y-5">
           <div className="flex justify-between border-b border-gray-500">
