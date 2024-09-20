@@ -1,7 +1,7 @@
 const Benchmark = () => {
     return (
       <div className="mx-auto 2xl:container">
-        <div className="w-[80%] mx-auto grid  grid-cols-2 p-[20px]  border border-orange-600 mt-10 pl-10 rounded-xl">
+        <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 p-[20px]  border border-orange-600 mt-10 pl-10 rounded-xl">
           <div className="flex flex-col items-start mt-3 gap-y-7">
             <div>
               <p className="flex p-3 text-white bg-purple-600 rounded-3xl h-[30px] justify-center items-center ">
@@ -20,7 +20,7 @@ const Benchmark = () => {
               </p>
             </div>
             <div>
-              <button className="flex items-center justify-center font-semibold text-orange-600 bg-gray-100 border border-orange-600 rounded-xl h-[50px] p-2">
+              <button className="md:flex items-center justify-center font-semibold text-orange-600 bg-gray-100 border border-orange-600 rounded-xl h-[50px] p-2 hidden">
                 View Sample Report<span className="material-symbols-outlined">north_east</span>
               </button>
             </div>

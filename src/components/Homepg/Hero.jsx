@@ -25,14 +25,14 @@ export const Hero = () => {
           discovery, selection and tracking, Qoruz has it all.
         </p>
       </div>
-      <div className="flex items-start justify-between p-3 border border-black rounded-xl w-[60%]">
+      <div className="md:flex items-start justify-between p-3 border border-black rounded-xl w-[60%] hidden">
         <div>
           <button className="flex items-center justify-center text-gray-600 bg-gray-100 gap-x-2 rounded-3xl h-[40px] w-[150px]">
             <span><img  className="h-[20px] "src="https://ik.imagekit.io/mino2112/biglinkz%20intern/instagram.png?updatedAt=1726735129712 "></img></span>Instagram<span className="text-black material-symbols-outlined">
                 keyboard_arrow_down
               </span></button>
         </div>
-        <div className="mt-2">
+        <div className="hidden mt-2 md:flex">
           <input placeholder="Start by Searching . . ." />
         </div>
         <div>

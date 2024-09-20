@@ -16,7 +16,7 @@ const Workspace = () => {
             Request For Demo<span className="material-symbols-outlined">arrow_outward</span>
           </button>
         </div>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div>
             <button>
               <img src="" />
