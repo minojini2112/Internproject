@@ -47,14 +47,14 @@ const Header = () => {
         </div>
       </div>
       </div>
-      <div className="fixed hidden mx-auto 2xl:container" id="headermd">
+      <div className="hidden mx-auto 2xl:container" id="headermd">
       <div className="mx-auto w-[90%] grid grid-cols-1 ">
         <div className="flex justify-end">
           <button>
             <span className="material-symbols-outlined" onClick={
               ()=>{
-                document.getElementById("headermd").classList.toggle("hidden")
-                document.getElementById("menu-btn").classList.remove("hidden")
+                document.getElementById("headermd").classList.toggle("hidden");
+                document.getElementById("menu-btn").classList.remove("hidden");
               }
             }>close</span>
           </button>
