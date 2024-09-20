@@ -1,24 +1,24 @@
 const Header = () => {
   return (
-    <div className="2xl:container mx-auto">
+    <div className="mx-auto 2xl:container">
       <div className="w-[90%] mx-auto flex justify-around pt-4 items-center">
         <div>
           <img></img>
-          <h2 className="font-bold text-3xl ">BigLinkz</h2>
+          <h2 className="text-3xl font-bold ">BigLinkz</h2>
         </div>
         <div>
-          <ul className="flex gap-x-10 text-center">
+          <ul className="flex text-center gap-x-10">
             <li>For Brands</li>
             <li>For Agencies</li>
-            <li className="flex justify-center items-center">
+            <li className="flex items-center justify-center">
               Product
-              <span className="material-symbols-outlined text-orange-600 ">
+              <span className="text-orange-600 material-symbols-outlined ">
                 keyboard_arrow_down
               </span>
             </li>
-            <li className="flex justify-center items-center">
+            <li className="flex items-center justify-center">
               Resources
-              <span className="material-symbols-outlined text-orange-600">
+              <span className="text-orange-600 material-symbols-outlined">
                 keyboard_arrow_down
               </span>
             </li>
@@ -26,11 +26,11 @@ const Header = () => {
           </ul>
         </div>
         <div className="flex justify-end gap-4">
-          <button className="border border-red-500 p-3 px-10 flex justify-center items-center bg-red-50 rounded-xl text-orange-600 font-bold hover:shadow-orange-50 hover:shadow-xl">
+          <button className="flex items-center justify-center p-3 px-10 font-bold text-orange-600 border border-red-500 bg-red-50 rounded-xl hover:shadow-orange-50 hover:shadow-xl">
             Login
             <span className="material-symbols-outlined">north_east</span>
           </button>
-          <button className="border border-red-500 p-3 px-10 flex justify-center items-center bg-orange-500 rounded-xl text-white font-bold hover:shadow-orange-100 hover:shadow-xl">
+          <button className="flex items-center justify-center p-3 px-10 font-bold text-white bg-orange-500 border border-red-500 rounded-xl hover:shadow-orange-100 hover:shadow-xl">
             Book a Demo
             <span className="material-symbols-outlined">north_east</span>
           </button>
