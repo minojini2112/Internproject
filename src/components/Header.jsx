@@ -11,8 +11,8 @@ const Header = () => {
           </div>
           <div className="hidden md:flex">
             <ul className="flex text-center gap-x-10">
-              <li><Link to="/Brand">For Brands</Link></li>
-              <li><Link to="/Agencies">For Agencies</Link></li>
+              <li><Link to="Brand">For Brands</Link></li>
+              <li><Link to="Agencies">For Agencies</Link></li>
               <li className="flex items-center justify-center">
                 Product
                 <span className="text-orange-600 material-symbols-outlined ">
@@ -25,7 +25,7 @@ const Header = () => {
                   keyboard_arrow_down
                 </span>
               </li>
-              <li><Link to="/Pricing">Pricing</Link></li>
+              <li><Link to="Pricing">Pricing</Link></li>
             </ul>
           </div>
           <div className="justify-end hidden gap-4 md:flex ">

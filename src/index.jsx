@@ -26,24 +26,24 @@ const Index=() => {
 }
 const Router=createBrowserRouter([
   {
-    path:'/Internproject',
+    path:'/',
     element:<Index/>,
     children:[
       {
         element:<Homepg/>,
-        path:"/Internproject",
+        path:"/",
       },
       {
         element:<Brands/>,
-        path:"/Brand",
+        path:"Brand",
       },
       {
          element:<Agencies/>,
-         path:"/Agencies",
+         path:"Agencies",
       },
       {
         element:<Pricing/>,
-         path:"/Pricing",
+         path:"Pricing",
       },
 
     ]
