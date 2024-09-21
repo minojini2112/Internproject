@@ -5,7 +5,7 @@ import Homepg from './components/Homepg/Homepg';
 import Agencies from './components/Agencies/Agencies';
 import Brands from './components/Brands/Brands';
 import Pricing from './components/Pricing/Pricing';
-//import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 
 
 
@@ -18,21 +18,20 @@ const Index=() => {
   return (
     <>
     <Header/>
-    <Homepg/>
-
+    <Outlet/>
     </>
     
 
   );
 }
-/*const Router=createBrowserRouter([
+const Router=createBrowserRouter([
   {
-    path:'/',
+    path:'/Internproject',
     element:<Index/>,
     children:[
       {
         element:<Homepg/>,
-        path:"/Home",
+        path:"/Internproject",
       },
       {
         element:<Brands/>,
@@ -51,5 +50,5 @@ const Index=() => {
   }
 ])
 
-root.render(<RouterProvider router={Router}/>)*/
-root.render(<Index/>)
+root.render(<RouterProvider router={Router}/>)
+//root.render(<Index/>)

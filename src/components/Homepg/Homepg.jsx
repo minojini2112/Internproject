@@ -9,8 +9,9 @@ const Homepg=()=>{
         
         <Hero/>
     <Benchmark/>
-    <Workspace/>
     <Strategy/>
+    <Workspace/>
+    
         </>
     )
 }
